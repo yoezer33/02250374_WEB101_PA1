@@ -1,0 +1,49 @@
+.feed {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 1rem 0;
+}
+
+.list { display: flex; flex-direction: column; }
+
+.item {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.icon { font-size: 1rem; flex-shrink: 0; margin-top: 2px; }
+
+.content { display: flex; flex-direction: column; gap: 0.2rem; }
+
+.message { font-size: 0.85rem; color: var(--text-secondary); margin: 0; }
+
+.label { color: var(--text-muted); }
+
+.repoLink {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  font-family: monospace;
+  font-size: 0.8rem;
+}
+
+.repoLink:hover { text-decoration: underline; }
+
+.commit { font-size: 0.8rem; color: var(--text-muted); margin: 0; }
+
+.time { font-size: 0.72rem; color: var(--text-muted); }

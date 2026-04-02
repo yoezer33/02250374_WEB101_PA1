@@ -1,0 +1,100 @@
+.wrapper {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.total {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.graphContainer {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+}
+
+.dayLabels {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding-top: 20px;
+}
+
+.dayLabel {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  height: 11px;
+  line-height: 11px;
+  min-width: 24px;
+}
+
+.svgWrapper {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+}
+
+.monthLabels {
+  position: relative;
+  height: 18px;
+  margin-bottom: 2px;
+}
+
+.monthLabel {
+  position: absolute;
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  transform: translateX(-50%);
+}
+
+.svg {
+  display: block;
+  width: 100%;
+  overflow: visible;
+}
+
+.cell {
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.cell:hover { opacity: 0.7; }
+
+.legend {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  justify-content: flex-end;
+}
+
+.legendCell {
+  width: 11px;
+  height: 11px;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.legendLabel {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}

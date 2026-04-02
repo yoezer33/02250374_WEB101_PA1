@@ -1,0 +1,92 @@
+.app {
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+.tabBar {
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+}
+
+.tabBarInner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.main {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.sidebarCol {
+  position: sticky;
+  top: 80px;
+}
+
+.contentCol {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-width: 0;
+}
+
+.overview {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sectionTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 1rem 0;
+}
+
+.reposGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  text-align: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  gap: 0.5rem;
+}
+
+.emptyIcon { font-size: 3rem; margin-bottom: 0.5rem; }
+
+.emptyHint {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  max-width: 300px;
+}
+
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 220px 1fr; }
+}
+
+@media (max-width: 640px) {
+  .layout { grid-template-columns: 1fr; }
+  .sidebarCol { position: static; }
+  .reposGrid { grid-template-columns: 1fr; }
+  .main { padding: 1.25rem 1rem; }
+  .tabBarInner { padding: 0 1rem; }
+}

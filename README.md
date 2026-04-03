@@ -7,10 +7,9 @@ College of Science and Technology, Phuentsholing
 Royal University of Bhutan
 
 ---
+## GitHub User Profile Page** — "https://github.com/yoezer33/02250374_WEB101_PA1"
 
 # Page Recreated
-
-**GitHub User Profile Page** — "https://github.com/yoezer33/02250374_WEB101_PA1"
 
 The GitHub user profile page was selected for this assignment because it demonstrates a well-structured and component-based layout that is good  for recreating using React. It includes multiple reusable UI components such as profile cards, navigation tabs, contribution heatmaps, and activity feeds. These elements allow for effective practice of component design, state management, and props usage.
 
